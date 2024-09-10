@@ -1,0 +1,22 @@
+{
+  "name": "testexample-app",
+  "version": "1.0.0",
+  "description": "testing out libSQL and AWS Lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Anurag Gaur",
+  "license": "ISC",
+  "dependencies": {
+    "@libsql/client": "^0.10.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
