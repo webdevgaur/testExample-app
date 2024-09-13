@@ -1,8 +1,9 @@
 require('dotenv').config();
 const express = require('express');
-const serverless = require('serverless-http');
+// const serverless = require('serverless-http');
 const { createClient } = require('@libsql/client');
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -83,8 +84,8 @@ app.delete('/delete-message/:id', async (req, res) => {
     }
 });
 
-// app.listen(3000, () => {
-//     console.log('Node app running on port 3000')
-// })
+app.listen(PORT, () => {
+    console.log('Node app running on port 3000')
+})
 
-module.exports.handler = serverless(app);
+// module.exports.handler = serverless(app);
