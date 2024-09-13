@@ -2,11 +2,11 @@
   "name": "testexample-app",
   "version": "1.0.0",
   "description": "testing out libSQL and AWS Lambda",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Anurag Gaur",
   "license": "ISC",
